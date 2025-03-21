@@ -16,6 +16,12 @@ const ProductList: React.FC = () => {
                     </div>
                 </Link>
             ))}
+            <Link to={'/product/new'}>
+
+                <button>
+                    생성하기
+                </button>
+            </Link>
         </div>
     );
 };

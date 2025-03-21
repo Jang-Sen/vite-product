@@ -3,8 +3,8 @@ import {client} from "../api/client.ts";
 import {QueryObserverResult, useQuery} from "@tanstack/react-query";
 import {ProductItem} from "../types/product.types.ts";
 
-export const fetchProduct = async (productId: string): Promise<AxiosResponse<ProductItem, any>> => {
-    return await client.get<any>(`/product/${productId}`)
+const fetchProduct = async (productId: string): Promise<AxiosResponse<ProductItem, any>> => {
+    return await client.get<ProductItem>(`/product/${productId}`)
 }
 
 export const useFetchProduct = (productId: string): QueryObserverResult<ProductItem, any> => {

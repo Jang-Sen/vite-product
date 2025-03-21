@@ -7,7 +7,7 @@ export interface ProductItem {
     price: number,
     description: string,
     category: string,
-    productImg: string
+    productImg: string[]
 }
 
 export interface ProductInput {
@@ -15,5 +15,5 @@ export interface ProductInput {
     price: number,
     description: string,
     category: string,
-    productImg: string
+    productImg: string[]
 }

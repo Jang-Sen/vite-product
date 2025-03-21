@@ -8,6 +8,7 @@ import App from "./App.tsx";
 import ProductList from "./pages/ProductList.tsx";
 import ProductDetail from "./pages/ProductDetail.tsx";
 import ErrorPage from "./route/ErrorPage.tsx";
+import CreateProduct from "./pages/CreateProduct.tsx";
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
     {
         path: '/product/:productId',
         element: <ProductDetail/>,
+    },
+    {
+        path: '/product/new',
+        element: <CreateProduct/>,
     },
     {
         path: '*',
